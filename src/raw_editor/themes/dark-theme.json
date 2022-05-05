@@ -72,7 +72,7 @@
     },
     "NumericTypeColor": {
       "__type__": "color",
-      "color": "#ff8080af"
+      "color": "#ffaaccee"
     },
     "QueryErrorTextColor": {
       "__type__": "color",
