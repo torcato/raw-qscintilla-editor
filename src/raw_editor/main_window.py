@@ -153,11 +153,17 @@ class MainWindow(QMainWindow):
         query_toolbar.addAction(publish_query_action)
         query_menu.addAction(publish_query_action)
 
-        self.animation = QLabel(self.editor)
-        self.animation.setScaledContents(True)
-        self.animation.hide()
-        self.movie = QMovie(':images/ajax-loader2.gif')
-        self.animation.setMovie(self.movie)
+        self.animation1 = QLabel(self.editor)
+        self.animation1.setScaledContents(True)
+        self.animation1.hide()
+        self.movie1 = QMovie(':images/loading1.gif')
+        self.animation1.setMovie(self.movie1)
+
+        self.animation2 = QLabel(self.editor)
+        self.animation2.setScaledContents(True)
+        self.animation2.hide()
+        self.movie2 = QMovie(':images/loading2.gif')
+        self.animation2.setMovie(self.movie2)
 
         administration_menu = self.menuBar().addMenu("Administration")
         views_action = QAction("Views", self)
@@ -196,15 +202,26 @@ class MainWindow(QMainWindow):
 
     def start_spin(self):
         self.editor.setEnabled(False)
+        # If the editor has a light color paper load animation1
+        # if it is darker loads animation 2
+        paper_color = self.editor.lexer.defaultPaper()
+        if (paper_color.rgb() >= 4286578687):
+            animation = self.animation1
+            movie = self.movie1
+        else:
+            animation = self.animation2
+            movie = self.movie2
+
         x1 = int(self.editor.width() / 2 - 50)
-        print('x1', x1)
-        self.animation.setGeometry(x1, 150, 150, 150)
-        self.animation.setVisible(True)
-        self.movie.start()
+        animation.setGeometry(x1, 150, 150, 150)
+        animation.setVisible(True)
+        movie.start()
 
     def stop_spin(self):
-        self.movie.stop()
-        self.animation.hide()
+        self.movie1.stop()
+        self.animation1.hide()
+        self.movie2.stop()
+        self.animation2.hide()
         self.editor.setEnabled(True)
 
     def run_query(self):

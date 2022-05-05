@@ -76,7 +76,7 @@
     },
     "QueryErrorTextColor": {
       "__type__": "color",
-      "color": "#ff8f0000"
+      "color": "#ffffa0a0"
     },
     "RecordFieldColor": {
       "__type__": "color",

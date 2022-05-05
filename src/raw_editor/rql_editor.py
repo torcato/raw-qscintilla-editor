@@ -14,7 +14,7 @@ default_theme = {
     "DefaultPaperColor": QColor("#FFFFFFFF"),
     'MarginBackGroundColor': QColor('#cccccc'),
     'MarkerBackgroundColor': QColor("#ee1111"),
-    'CaretForegroundColor':[],
+    'CaretForegroundColor': [],
     'CaretLineBackgroundColor': QColor("#ffe4e4"),
     'MatchedBraceForegroundColor': QColor("#ff0000"),
     'MatchedBraceBackgroundColor': QColor("#ffffff"),
@@ -34,7 +34,7 @@ default_theme = {
 
 class RawLexer(QsciLexerCustom):
 
-    def __init__(self, parent, theme):
+    def __init__(self, theme=default_theme, parent=None):
         super(RawLexer, self).__init__(parent)
 
         # Default text settings
@@ -189,7 +189,7 @@ class RqlEditor(QsciScintilla):
         self.setMatchedBraceBackgroundColor(self.theme['MatchedBraceBackgroundColor'])
         self.setUnmatchedBraceBackgroundColor(self.theme['MatchedBraceBackgroundColor'])
 
-        #self.setMatchedBraceIndicator(1)
+        # self.setMatchedBraceIndicator(1)
         # Clickable margin 1 for showing markers
         self.setMarginSensitivity(1, True)
         #        self.connect(self,
@@ -211,9 +211,8 @@ class RqlEditor(QsciScintilla):
         if 'CaretForegroundColor' in theme:
             self.setCaretForegroundColor(self.theme['CaretForegroundColor'])
 
-
         # Lexer for syntax highlighting
-        self.lexer = RawLexer(self, self.theme)
+        self.lexer = RawLexer(theme=self.theme, parent=self)
         self.setLexer(self.lexer)
 
         self.setAutoCompletionThreshold(3)
@@ -261,7 +260,7 @@ class RqlEditor(QsciScintilla):
     # Some how disabling the editor makes it loose the margin color
     def setEnabled(self, bool):
         super().setEnabled(bool)
-        self.setMarginsBackgroundColor( self.theme["MarginBackGroundColor"])
+        self.setMarginsBackgroundColor(self.theme["MarginBackGroundColor"])
 
 
 if __name__ == "__main__":
