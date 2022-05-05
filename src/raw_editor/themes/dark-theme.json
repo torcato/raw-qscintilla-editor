@@ -1,0 +1,202 @@
+{
+  "Widgets": {
+    "Window": {
+      "__type__": "color",
+      "color": "#ff353535"
+    },
+    "WindowText": {
+      "__type__": "color",
+      "color": "#ffffffff"
+    },
+    "Base": {
+      "__type__": "color",
+      "color": "#ff191919"
+    },
+    "AlternateBase": {
+      "__type__": "color",
+      "color": "#ff353535"
+    },
+    "ToolTipBase": {
+      "__type__": "color",
+      "color": "#ff000000"
+    },
+    "ToolTipText": {
+      "__type__": "color",
+      "color": "#ffffffff"
+    },
+    "Text": {
+      "__type__": "color",
+      "color": "#ffffffff"
+    },
+    "Button": {
+      "__type__": "color",
+      "color": "#ff353535"
+    },
+    "ButtonText": {
+      "__type__": "color",
+      "color": "#ffffffff"
+    },
+    "BrightText": {
+      "__type__": "color",
+      "color": "#ffff0000"
+    },
+    "Link": {
+      "__type__": "color",
+      "color": "#ff2a82da"
+    },
+    "Highlight": {
+      "__type__": "color",
+      "color": "#ff2a82da"
+    },
+    "HighlightedText": {
+      "__type__": "color",
+      "color": "#ff000000"
+    }
+  },
+  "QueryView": {
+    "NullColor": {
+      "__type__": "color",
+      "color": "#ff7f7f7f"
+    },
+    "StringColor": {
+      "__type__": "color",
+      "color": "#f2ecc7"
+    },
+    "TemporalColor": {
+      "__type__": "color",
+      "color": "#84b886"
+    },
+    "DefaultTypeColor": {
+      "__type__": "color",
+      "color": "#ffffffff"
+    },
+    "NumericTypeColor": {
+      "__type__": "color",
+      "color": "#ff8080af"
+    },
+    "QueryErrorTextColor": {
+      "__type__": "color",
+      "color": "#ff8f0000"
+    },
+    "RecordFieldColor": {
+      "__type__": "color",
+      "color": "#aaaaaa"
+    },
+    "RecordInnerColor": {
+      "__type__": "color",
+      "color": "#5f0000"
+    },
+    "CollectionIndexColor": {
+      "__type__": "color",
+      "color": "#b06d63"
+    },
+    "CollectionInnerColor": {
+      "__type__": "color",
+      "color": "#ff7f7f7f"
+    }
+  },
+  "Editor": {
+    "DefaultFont": {
+      "__type__": "font",
+      "pointSize": 12,
+      "family": "Consolas"
+    },
+    "DefaultColor": {
+      "__type__": "color",
+      "color": "#ffffffff"
+    },
+    "DefaultPaperColor": {
+      "__type__": "color",
+      "color": "#ff141414"
+    },
+    "MarginBackGroundColor": {
+      "__type__": "color",
+      "color": "#ff404040"
+    },
+    "MarkerBackgroundColor": {
+      "__type__": "color",
+      "color": "#ffee1111"
+    },
+    "CaretForegroundColor": {
+      "__type__": "color",
+      "color": "#ffffffff"
+    },
+    "CaretLineBackgroundColor": {
+      "__type__": "color",
+      "color": "#ff301010"
+    },
+    "MatchedBraceForegroundColor": {
+      "__type__": "color",
+      "color": "#ffff4040"
+    },
+    "MatchedBraceBackgroundColor": {
+      "__type__": "color",
+      "color": "#ff000000"
+    },
+    "styles": {
+      "default": {
+        "color": {
+          "__type__": "color",
+          "color": "#ffc8c8c8"
+        },
+        "bold": false
+      },
+      "keywords": {
+        "color": {
+          "__type__": "color",
+          "color": "#ff85a3e0"
+        },
+        "bold": true
+      },
+      "constants": {
+        "color": {
+          "__type__": "color",
+          "color": "#ff30afaf"
+        },
+        "bold": true
+      },
+      "comments": {
+        "color": {
+          "__type__": "color",
+          "color": "#ff7f7f7f"
+        },
+        "bold": false
+      },
+      "strings": {
+        "color": {
+          "__type__": "color",
+          "color": "#ffffcc66"
+        },
+        "bold": false
+      },
+      "builtInFunctions": {
+        "color": {
+          "__type__": "color",
+          "color": "#ff53c68c"
+        },
+        "bold": true
+      },
+      "operators": {
+        "color": {
+          "__type__": "color",
+          "color": "#ffc8c8c8"
+        },
+        "bold": false
+      },
+      "parens": {
+        "color": {
+          "__type__": "color",
+          "color": "#ffa0a05a"
+        },
+        "bold": true
+      },
+      "numbers": {
+        "color": {
+          "__type__": "color",
+          "color": "#ffc8c8a8"
+        },
+        "bold": false
+      }
+    }
+  }
+}
