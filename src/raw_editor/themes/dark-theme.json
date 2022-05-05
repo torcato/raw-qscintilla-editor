@@ -80,11 +80,11 @@
     },
     "RecordFieldColor": {
       "__type__": "color",
-      "color": "#aaaaaa"
+      "color": "#ffffffff"
     },
     "RecordInnerColor": {
       "__type__": "color",
-      "color": "#5f0000"
+      "color": "#ff7f7f7f"
     },
     "CollectionIndexColor": {
       "__type__": "color",

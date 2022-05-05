@@ -62,14 +62,15 @@ class RawLexer(QsciLexerCustom):
         self.builtin_functions = ['avg', 'count', 'exists', 'max', 'min', 'sum', 'trim', 'startswith',
                                   'cavg', 'ccount', 'cmax', 'cmin', 'csum', 'isnull', 'isnone',
                                   'date_trunc', 'strempty', 'to_date', 'to_time', 'to_timestamp', 'enumerate',
-                                  'read', 'read_many', 'read_csv', 'read_parquet_raw', 'read_parquet_avro', 'read_json',
-                                  'read_xml', 'read_pgsql', 'read_mysql', 'read_oracle', 'read_sqlserver', 'read_hive',
+                                  'read', 'read_many', 'read_csv', 'read_json','read_xml', 'read_pgsql',
+                                  'read_mysql', 'read_oracle', 'read_sqlserver',
                                   'read_sqlite', 'query_pgsql', 'query_mysql', 'query_oracle', 'query_sqlserver',
                                   'try_read', 'try_read_many', 'try_read_csv', 'try_read_json', 'try_read_xml',
                                   'try_read_pgsql', 'try_read_mysql', 'try_read_oracle',
                                   'try_read_sqlserver', 'try_read_hive', 'try_read_sqlite', 'try_query_pgsql',
                                   'try_query_mysql', 'try_query_oracle', 'try_query_sqlserver',
-                                  'ls', 'ls_schemas', 'ls_tables']
+                                  'ls', 'ls_schemas', 'ls_tables', 'parse_json', 'parse_csv', 'parse_xml',
+                                  'http']
 
         self.operators = r':|\+|\-|\/|\/\/|%|<@>|@>|<@|&|\^|~|<|>|<=|=>|==|!=|:=|<>|='
 

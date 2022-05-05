@@ -31,17 +31,3 @@ def save_theme(filename, data):
 
     with open(filename, "w") as f:
         json.dump(data, f, default=default, indent=2)
-
-
-if __name__ == "__main__":
-    color = QColor('#ffff0000')
-    print('getHsl()', color.getHsl())
-    print('getHslF()', color.getHslF())
-    print('getRgb()', color.getRgb())
-    print('getRgbF()', color.getRgbF())
-    print('getHsv()', color.getHsv())
-    print('getHsvF()', color.getHsvF())
-    print('getCmyk()', color.getCmyk())
-    print('getCmykF()', color.getCmykF())
-    print('rgba()', color.rgba())
-    print('rgb()', hex(color.rgb()))
