@@ -1,6 +1,5 @@
 <!DOCTYPE RCC><RCC version="1.0">
 <qresource>
-    <file>images/ajax-loader2.gif</file>
     <file>images/arrow-curve-180-left.png</file>
     <file>images/blue-folder-open-document.png</file>
     <file>images/collapse.png</file>
@@ -15,11 +14,12 @@
     <file>images/clipboard-paste-document-text.png</file>
     <file>images/disk--pencil.png</file>
     <file>images/document-copy.png</file>
-    <file>images/giphy.gif</file>
     <file>images/question.png</file>
     <file>images/selection-input.png</file>
     <file>images/ui-tab--plus.png</file>
     <file>images/cloud-arrow.png</file>
+    <file>images/loading1.gif</file>
+    <file>images/loading2.gif</file>
 </qresource>
 </RCC>
 
